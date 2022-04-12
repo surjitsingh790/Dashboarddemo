@@ -34,13 +34,13 @@ external_stylesheets = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, external_stylesheets],
                 assets_external_path=stylesheet)
 
-image_filename = 'stock_logo.png'  # replace with your own image
+image_filename = 'assets\\stock_logo.png'  # replace with your own image
 encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
-image_filename1 = 'tesla.png'  # replace with your own image
+image_filename1 = 'assets\\tesla.png'  # replace with your own image
 encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
 
-image_filename2 = 'ford_logo.jpg'  # replace with your own image
+image_filename2 = 'assets\\ford.png'  # replace with your own image
 encoded_image2 = base64.b64encode(open(image_filename2, 'rb').read())
 
 start = date.today() - timedelta(days=1000)
